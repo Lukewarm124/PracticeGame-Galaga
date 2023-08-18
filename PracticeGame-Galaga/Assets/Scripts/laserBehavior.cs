@@ -15,6 +15,11 @@ public class laserBehavior : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+        //print("laser death");
     }
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision);
+    }
+
 }
